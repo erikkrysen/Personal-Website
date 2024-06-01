@@ -1,0 +1,114 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Karrik';
+    src: url('karrik_fonts-main/fonts/Web/WOFF2/Karrik-Regular.woff2') format('woff2'),
+         url('karrik_fonts-main/fonts/Web/WOFF/Karrik-Regular.woff') format('woff'),
+         url('karrik_fonts-main/fonts/Web/TFF/Karrik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Karrik, sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* Style the header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #E7D7C1;
+    padding: 30px;
+    font-size: 35px;
+    overflow: hidden;
+}
+
+.header-name{
+    font-size: 2em;
+    color: #BF4342;
+    padding-left: 1vw;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vw;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 6px 20px;
+    color: #BF4342; 
+    
+}
+
+.nav a:hover, .nav a.active {
+    background: #BF4342;
+    color: #E7D7C1;
+}
+
+/* Container for flexboxes */
+.content {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 150px;
+    background-color: #BF4342;
+}
+
+.content h1 {
+    padding-top: 50px;
+    font-size: 2em;
+    color: #E7D7C1;
+    margin-bottom: 20px;
+    min-width: 25vw;
+    max-width: 25vw;
+    max-height: 25vh;
+    min-height: 25vh;
+}
+
+#grad {
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 0px;
+}
+
+img {
+    width: 25%;
+    padding:10px;
+    background-color: #BF4342;
+    object-fit: cover;
+}
+
+#home {
+    width: 25%;
+    padding:10px;
+    background-color: #BF4342;
+    object-fit: cover;
+}
+
+.image-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.image-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
