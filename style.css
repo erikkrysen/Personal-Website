@@ -5,18 +5,52 @@
     box-sizing: border-box;
 }
 
+/* colors: #262523
+#fff7f0
+#E7D7C1
+#BF4342
+*/
+
 @font-face {
     font-family: 'Karrik';
-    src: url('karrik_fonts-main/fonts/Web/WOFF2/Karrik-Regular.woff2') format('woff2'),
-         url('karrik_fonts-main/fonts/Web/WOFF/Karrik-Regular.woff') format('woff'),
-         url('karrik_fonts-main/fonts/Web/TFF/Karrik-Regular.ttf') format('truetype');
+    src: url('fonts/Karrik-Regular.woff2') format('woff2'),
+         url('fonts/Karrik-Regular.woff') format('woff'),
+         url('fonts/Karrik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'murmure';
+    src: url('fonts/LeMurmure-Regular.woff2') format('woff2'),
+         url('fonts/LeMurmure-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mess';
+    src: url('fonts/Mess-Light_web.woff2') format('woff2'),
+         url('fonts/Mess-Light_web.woff') format('woff'),
+         url('fonts/Mess-Light_web.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'outward';
+    src: url('fonts/outward-block-webfont.woff2') format('woff2'),
+         url('fonts/outward-block-webfont.woff') format('woff'),
+         url('fonts/outward-block-webfont.ttf') format('truetype')
+         url('fonts/outward-block-webfont.svg') format('svg'),
+         url('fonts/outward-block-webfont.eot') format('eot');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     font-family: Karrik, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fff7f0;
     min-height: 100vh;
     display: flex;
 }
@@ -37,13 +71,16 @@ header {
 }
 
 header .name{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-content: center;
+    font-family: outward, sans-serif;
     position: relative;
-    width: 200px;
+    width: 120px;
     height: 100%;
-    font-size: 2em;
-    color: #BF4342;
+    font-size: 4.1em;
+    color: #262523;
     border-right: 1px solid #262523;
 }
 
@@ -57,29 +94,51 @@ header .name{
 .nav a {
     text-decoration: none;
     padding: 6px 20px;
-    color: #BF4342; 
+    color: #262523; 
     
 }
 
 .nav a:hover, .nav a.active {
     background: #BF4342;
-    color: #E7D7C1;
+    color: #fff7f0;
 }
 
 /* Container for flexboxes */
 .content {
-    /* position: relative; */
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 60px;
-    background-color: #BF4342;
+    justify-content: left;
+    padding-top: 80px;
+    background-color: #fff7f0;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
 }
 
-.content h1 {
+.content .textArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 0 2%;
+    color: #262523;
+}
+
+.content .titel {
+    display: flex;
+    align-items: left;
+    align-content: left;
+    justify-content: left;
+    font-family: outward, sans-serif;
+    font-size: 30em;
+    color: #262523;
+    height: 37vh;
+}
+.content h2 {
     padding-top: 20px;
     font-size: 2em;
-    color: #E7D7C1;
+    color: #262523;
     margin-bottom: 20px;
     min-width: 25vw;
     max-width: 25vw;
@@ -87,16 +146,18 @@ header .name{
     min-height: 25vh;
 }
 
-#grad {
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 0px;
-}
-
 img {
     width: 25%;
     padding:10px;
     background-color: #BF4342;
+    object-fit: cover;
+}
+
+img .bgd {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
     object-fit: cover;
 }
 
