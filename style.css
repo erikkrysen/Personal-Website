@@ -123,6 +123,7 @@ header .name{
     align-items: left;
     padding: 0 2%;
     color: #262523;
+    width: 100%;
 }
 
 .content .titel {
@@ -131,9 +132,12 @@ header .name{
     align-content: left;
     justify-content: left;
     font-family: outward, sans-serif;
-    font-size: 30em;
+    font-size: calc(10vh + 20vw);
     color: #262523;
-    height: 37vh;
+    margin: 0;
+    padding: 0;
+    line-height: 0.705; /* Adjust as needed */
+    height: 100%
 }
 .content h2 {
     padding-top: 20px;
@@ -144,6 +148,79 @@ header .name{
     max-width: 25vw;
     max-height: 25vh;
     min-height: 25vh;
+}
+
+.buttonscontainer {
+    width: 100%;
+    height: auto;
+    max-width: 77.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    position: relative;
+}
+
+.buttons {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.buttons.code {
+    font-family: murmure, sans-serif;
+    letter-spacing: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    width: 42rem;
+    margin-left: 15rem;
+    border: solid 1px;
+    border-color: #262523;
+    border-radius: 3rem;
+}
+.buttons.design {
+    font-family: murmure, sans-serif;
+    letter-spacing: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 40.875rem;
+    margin-left: 20rem;
+    margin-top: 0.5rem;
+    border: solid 1px;
+    border-color: #262523;
+    border-radius: 3rem;
+}
+.buttons.photo  {
+    font-family: murmure, sans-serif;
+    letter-spacing: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50rem;
+    margin-left: 10rem;
+    margin-top: 0.5rem;
+    border: solid 1px;
+    border-color: #262523;
+    border-radius: 3rem;
+}
+
+.buttons.code.text {
+    margin-left: 1rem;
+    font-size: 800%;
+    border:none;
+}
+
+.buttons.design.text {
+    margin-left: 1rem;
+    font-size: 800%;
+    border:none;
+}
+
+.buttons.photo.text {
+    margin-left: 1rem;
+    font-size: 800%;
+    border:none;
 }
 
 img {
