@@ -110,6 +110,13 @@ header .name{
     color: #fff7f0;
 }
 
+.wrapper {
+    width: 100%;
+    padding-top: 80px;
+    background-color: #fff7f0;
+
+}
+
 /* Container for flexboxes */
 .content {
     height: 80vh;
