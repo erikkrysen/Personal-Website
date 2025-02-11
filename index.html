@@ -9,17 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="js/scroll.js"></script>
 </head>
 
-<body>
+<body> 
     <header>
-        <div class="name">ERIK KRYSÉN</div>
+        <div id="name" class="name" onclick="scrollToTop()">ERIK KRYSÉN</div>
         <div class="nav">
             <a href="index.html" class="active">HOME</a>
-            <a href="projects.html">PROJECTS</a>
-            <a href="about.html">ABOUT</a>
+            <a onclick="scrollToPosition()">PROJECTS</a>
+            <a href="aboutme.html">ABOUT ME</a>
             <a href="contact.html">CONTACT</a>
-            <a href="cv.html">RESUME</a>
         </div>
     </header>
     <div class="wrapper">
@@ -51,12 +51,23 @@
                 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
                 <script>
                     var typed = new Typed('.auto-type', {
-                        strings: ['^200 I&apos;M A DESIGNER AND PROGRAMMER BASED IN LUND, SWEDEN.'],
+                        strings: ['^200 I&apos;M A DESIGNER AND DEVELOPER BASED IN LUND, SWEDEN.'],
                         typeSpeed: 30,
                         cursorChar: '▮',
                         startDelay: 200,
                     });
                 </script>
+            </div>
+        </div>
+        <hr>
+        <h1>
+            PROJECTS
+        </h1>
+        <hr>
+        <div class="projects">
+            <div class="projektinfo">
+                <img src="images/medventure.png" alt="MedVenture" class="profile-pic">
+                <img src="images/zenin.png" alt="zenin" class="profile-pic">
             </div>
         </div>
     </div>

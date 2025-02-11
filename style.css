@@ -61,6 +61,13 @@ body {
     display: flex;
 }
 
+.image-background {
+    background-image: url('images/about-bakgrund.png'); /* Path to your image */
+    background-size: cover; /* Makes the image cover the entire area */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the image */
+}
+
 /* Style the header */
 header {
     position: fixed;
@@ -113,7 +120,7 @@ header .name{
 .wrapper {
     width: 100%;
     padding-top: 80px;
-    background-color: #fff7f0;
+    /*background-color: #fff7f0;*/
 
 }
 
@@ -124,7 +131,7 @@ header .name{
     display: flex;
     justify-content: left;
     padding-top: 80px;
-    background-color: #fff7f0;
+    /*background-color: #fff7f0;
     /* justify-content: space-between; */
     align-items: center;
     padding-top: 0px;
@@ -147,9 +154,22 @@ header .name{
     color: #262523;
     margin: 0;
     padding: 0;
+    line-height: 0.705;
+    height: 100%
+}
+
+.content .aboutmetitle {
+    display: flex;
+    justify-content: left;
+    font-family: outward, sans-serif;
+    font-size: calc(10vh + 20vw);
+    color: #BF4342;
+    margin: 0;
+    padding: 0;
     line-height: 0.705; /* Adjust as needed */
     height: 100%
 }
+
 .content h2 {
     padding-top: 20px;
     font-size: 2em;
@@ -265,6 +285,31 @@ img {
     padding:10px;
     background-color: #BF4342;
     object-fit: cover;
+}
+
+.linkedin-container {
+    display: flex;
+    align-items: top;
+}
+
+.linkedin-container a {
+    display: block;
+    font-size: 1.5em;
+    padding-top: 0.8rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-decoration: none;
+    color: #262523;
+    align-items: top;
+}
+
+.linkedin-logo {
+    align-items: top;
+    width: 80px;
+    background-color: #fff7f0;
+    object-fit: contain;
 }
 
 img .bgd {
