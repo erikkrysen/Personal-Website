@@ -1,7 +1,7 @@
 function scrollToTop() {
   document.documentElement.scrollTo({
-    top: 0, // Scroll to 250px from the top
-    behavior: 'smooth', // Add smooth scrolling
+    top: 0,
+    behavior: 'smooth',
   });
 }
 
@@ -12,3 +12,21 @@ function scrollToPosition() {
     inline: "start"
   });
 }
+
+function goToProjects() {
+  window.location.href = "index.html#projlist";
+}
+
+window.addEventListener('load', () => {
+  const hash = window.location.hash;
+  if (hash === '#projlist') {
+    const proj = document.getElementById("projlist");
+    if (proj) {
+      proj.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end',
+        inline: "start"
+      });
+    }
+  }
+});

@@ -1,15 +1,8 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* colors: #262523
-#fff7f0
-#E7D7C1
-#BF4342
-*/
 
 @font-face {
     font-family: 'Karrik';
@@ -62,13 +55,12 @@ body {
 }
 
 .image-background {
-    background-image: url('images/about-bakgrund.png'); /* Path to your image */
-    background-size: cover; /* Makes the image cover the entire area */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-position: center; /* Centers the image */
+    background-image: url('images/about-bakgrund.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* Style the header */
 header {
     position: fixed;
     top: 0;
@@ -120,21 +112,14 @@ header .name{
 .wrapper {
     width: 100%;
     padding-top: 80px;
-    /*background-color: #fff7f0;*/
-
 }
 
-/* Container for flexboxes */
 .content {
-    height: 80vh;
+    height:82vh;
     width: 80vw;
     display: flex;
     justify-content: left;
-    padding-top: 80px;
-    /*background-color: #fff7f0;
-    /* justify-content: space-between; */
     align-items: center;
-    padding-top: 0px;
 }
 
 .content .textArea {
@@ -166,46 +151,69 @@ header .name{
     color: #BF4342;
     margin: 0;
     padding: 0;
-    line-height: 0.705; /* Adjust as needed */
+    line-height: 0.705;
     height: 100%
 }
 
-.content h2 {
-    padding-top: 20px;
-    font-size: 2em;
-    color: #262523;
-    max-width: 25vw;
-    min-width: 25vw;
-    max-height: 25vh;
-    min-height: 25vh;
-    align-content: start;
-}
-
 .undercontent {
-    height: 80vh;
-    width: 80vw;
+    height: 25vh;
+    width: 30vw;
     display: flex;
     justify-content: left;
-    background-color: #fff7f0;
+    position: absolute;
+    margin-left: 8vw;
+    margin-bottom: 10vh;
 }
 
 .undercontent.intro {
     max-width: 25vw;
-    min-width: 25vw;
+    min-width: 10vw;
     max-height: 25vh;
-    min-height: 25vh;
-    padding: 0 0 0 2%;
+    min-height: 10vh;
     align-content: start;
 }
 
 .undercontent.intro.h2 {
     font-size: 2em;
     color: #262523;
-    max-width: 25vw;
-    min-width: 25vw;
-    max-height: 25vh;
-    min-height: 25vh;
-    align-content: start;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    overflow: hidden;
+}
+
+.scroll {
+    white-space: nowrap;
+    margin: 0 2em;
+}
+
+.scroll div {
+    display: flex;
+    gap: 1em;
+}
+
+.scroll p {
+    font-family: outward, sans-serif;
+    font-size: 5em;
+    color: #262523;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.RightToLeft {
+    animation: RightToLeft 10s infinite linear;
+}
+
+@keyframes  RightToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
 }
 
 .buttonscontainer {
@@ -214,8 +222,6 @@ header .name{
     max-width: 77.5rem;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
     position: relative;
 }
 
@@ -232,7 +238,7 @@ header .name{
     flex-direction: row;
     justify-content: flex-start;
     width: 42rem;
-    margin-left: 15rem;
+    margin-left: 20rem;
     border: solid 1px;
     border-color: #262523;
     border-radius: 3rem;
@@ -243,7 +249,7 @@ header .name{
     flex-direction: row;
     justify-content: flex-start;
     width: 40.875rem;
-    margin-left: 20rem;
+    margin-left: 25rem;
     margin-top: 0.8rem;
     border: solid 1px;
     border-color: #262523;
@@ -255,7 +261,7 @@ header .name{
     flex-direction: row;
     justify-content: flex-start;
     width: 50rem;
-    margin-left: 10rem;
+    margin-left: 15rem;
     margin-top: 0.8rem;
     border: solid 1px;
     border-color: #262523;
@@ -263,19 +269,19 @@ header .name{
 }
 
 .buttons.code.text {
-    margin-left: 4rem;
+    margin-left: 2rem;
     font-size: 800%;
     border:none;
 }
 
 .buttons.design.text {
-    margin-left: 4rem;
+    margin-left: 2rem;
     font-size: 800%;
     border:none;
 }
 
 .buttons.photo.text {
-    margin-left: 4rem;
+    margin-left: 2rem;
     font-size: 800%;
     border:none;
 }
@@ -330,9 +336,6 @@ img .bgd {
 .image-container::-webkit-scrollbar {
     display: none;
 }
-
-/* Hide scrollbar for IE, Edge and Firefox */
 .image-container {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
+    -ms-overflow-style: none;
+    scrollbar-width: none;}
