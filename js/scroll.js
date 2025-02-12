@@ -14,7 +14,7 @@ function scrollToPosition() {
 }
 
 function goToProjects() {
-  window.location.href = "index.html#projlist";
+  window.location.href = "../index.html#projlist";
 }
 
 window.addEventListener('load', () => {
