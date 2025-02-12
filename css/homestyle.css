@@ -61,7 +61,7 @@ header .name{
     width: 120px;
     min-width: 120px;
     height: 100%;
-    font-size: 4.1rem;
+    font-size: 4.1em;
     color: #262523;
     border-right: 1px solid #262523;
 }
@@ -138,7 +138,7 @@ header .name{
 }
 
 .undercontent.intro.h2 {
-    font-size: 2em;
+    font-size: 2vw;
     color: #262523;
 }
 
@@ -183,7 +183,6 @@ header .name{
 .buttonscontainer {
     width: 100%;
     height: auto;
-    max-width: 77.5rem;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -194,59 +193,58 @@ header .name{
     width: 100%;
     display: flex;
     position: relative;
+    align-items: flex-end;
+    margin-left: 7vw;
 }
 
 .buttons.code {
     font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 1rem;
+    letter-spacing: 1vw;
     flex-direction: row;
     justify-content: flex-start;
-    width: 42rem;
-    margin-left: 20rem;
+    width: 42vw;
     border: solid 1px;
     border-color: #262523;
-    border-radius: 3rem;
+    border-radius: 3vw;
 }
 .buttons.design {
     font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 1rem;
+    letter-spacing: 1vw;
     flex-direction: row;
     justify-content: flex-start;
-    width: 40.875rem;
-    margin-left: 25rem;
-    margin-top: 0.8rem;
+    width: 40.875vw;
+    margin-top: 1.2vh;
     border: solid 1px;
     border-color: #262523;
-    border-radius: 3rem;
+    border-radius: 3vw;
 }
 .buttons.photo  {
     font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 1rem;
+    letter-spacing: 1vw;
     flex-direction: row;
     justify-content: flex-start;
-    width: 50rem;
-    margin-left: 15rem;
-    margin-top: 0.8rem;
+    width: 50vw;
+    margin-top: 1.2vh;
     border: solid 1px;
     border-color: #262523;
-    border-radius: 3rem;
+    border-radius: 3vw;
 }
 
 .buttons.code.text {
     margin-left: 2rem;
-    font-size: 800%;
+    font-size: 8vw;
     border:none;
 }
 
 .buttons.design.text {
     margin-left: 2rem;
-    font-size: 800%;
+    font-size: 8vw;
     border:none;
 }
 
 .buttons.photo.text {
     margin-left: 2rem;
-    font-size: 800%;
+    font-size: 8vw;
     border:none;
 }
 
