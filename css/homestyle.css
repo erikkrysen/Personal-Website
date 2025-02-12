@@ -49,6 +49,7 @@ header {
     z-index: 110;
     background-color: #fff7f0;
     border-bottom: 1px solid #262523;
+    border-top: 1px solid #262523;
 }
 
 header .name{
@@ -88,6 +89,7 @@ header .name{
 .wrapper {
     width: 100%;
     padding-top: 80px;
+    overflow: hidden;
 }
 
 .content {
@@ -125,20 +127,17 @@ header .name{
     display: flex;
     justify-content: left;
     position: absolute;
-    margin-left: 8vw;
-    margin-bottom: 10vh;
+    margin-left: 16vw;
+    margin-bottom: 9vh;
 }
 
-.undercontent.intro {
+.undercontent-intro {
     max-width: 25vw;
-    min-width: 10vw;
-    max-height: 25vh;
-    min-height: 10vh;
     align-content: start;
 }
 
-.undercontent.intro.h2 {
-    font-size: 2vw;
+.undercontent-intro h2 {
+    font-size: 1.5vw;
     color: #262523;
 }
 
@@ -260,4 +259,101 @@ img {
     padding:10px;
     background-color: #BF4342;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header .name {
+        flex-direction: column;
+        height: auto;
+        border-right: none;
+    }
+    .nav {
+        padding-left: 1vw;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav a {
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .wrapper {
+        padding-top: 15vh;
+    }
+
+    .content {
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .content .titel {
+        font-size: calc(15vh + 30vw);
+        line-height: 0.71;
+    }
+
+    .undercontent {
+        height: 25vh;
+        width: 30vw;
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        margin-left: 30vw;
+        margin-top: 9vh;
+    }
+
+    .undercontent h2 {
+        font-size: calc(1vw + 1vh);
+    }
+
+    .buttonscontainer {
+        font-size: calc(1vw + 0.5em);
+        width: 100%;
+    }
+
+    .buttons {
+        width: auto;
+        align-items: center;
+        margin-right: -8vw;
+    }
+
+    .buttons.photo  {
+        width: auto;
+        margin-right: 3vw;
+    }
+
+    .buttons.code  {
+        width: auto;
+        margin-right: 4vw;
+    }
+
+    .buttons.design  {
+        width: auto;
+        margin-right: 4vw;
+    }
+
+    .buttons.code.text{
+        font-size: 5vh;
+    }
+
+    .buttons.design.text{
+        font-size: 5vh;
+    }
+    
+    .buttons.photo.text{
+        font-size: 5vh;
+    }
+
+    .scroll p {
+        font-size: 5em;
+    }
+    img {
+        width: 50%;
+    }
 }

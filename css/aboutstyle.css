@@ -132,3 +132,62 @@ header .name{
     object-fit: cover;
     border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header .name {
+        flex-direction: column;
+        height: auto;
+        border-right: none;
+    }
+    .nav {
+        padding-left: 1vw;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav a {
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .wrapper {
+        padding-top: 15vh;
+    }
+
+    .content {
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .content .aboutmetitle {
+        font-size: calc(15vh + 30vw);
+        line-height: 0.71;
+    }
+
+    .undercontent {
+        height: 25vh;
+        width: 30vw;
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        margin-left: 30vw;
+        margin-top: 9vh;
+    }
+
+    .undercontent h2 {
+        font-size: calc(1vw + 1vh);
+    }
+    
+    .profile-pic {
+        width: 40vw;
+        background-color: #BF4342;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
