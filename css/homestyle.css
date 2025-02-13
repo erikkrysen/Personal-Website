@@ -88,12 +88,11 @@ header .name{
 
 .wrapper {
     width: 100%;
-    padding-top: 80px;
+    padding-top: 15vh;
     overflow: hidden;
 }
 
 .content {
-    height:82vh;
     width: 80vw;
     display: flex;
     justify-content: left;
@@ -285,12 +284,12 @@ img {
     }
 
     .wrapper {
-        padding-top: 15vh;
+        padding-top: 25vh;
     }
 
     .content {
         flex-direction: column;
-        height: 80vh;
+        height: 70vh;
     }
 
     .content .titel {
