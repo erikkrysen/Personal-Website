@@ -195,6 +195,11 @@ header .name{
     margin-left: 7vw;
 }
 
+.buttons a{
+    text-decoration: none;
+    color: #262523;
+}
+
 .buttons.code {
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 1vw;
@@ -260,7 +265,7 @@ img {
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
     header {
         flex-direction: column;
         height: auto;
@@ -274,13 +279,14 @@ img {
     .nav {
         padding-left: 1vw;
         flex-direction: row;
-        gap: 10px;
+        gap: 2vw;
         width: 100%;
+        align-items: center;
     }
 
     .nav a {
         text-align: center;
-        font-size: 0.9em;
+        font-size: 3.3vw;
     }
 
     .wrapper {
@@ -303,8 +309,8 @@ img {
         display: flex;
         justify-content: left;
         position: absolute;
-        margin-left: 30vw;
-        margin-top: 9vh;
+        margin-left: calc(5vh + 18vw);
+        margin-top: calc(5vh + 4vw);
     }
 
     .undercontent h2 {

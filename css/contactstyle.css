@@ -188,13 +188,14 @@ img {
     .nav {
         padding-left: 1vw;
         flex-direction: row;
-        gap: 10px;
+        gap: 2vw;
         width: 100%;
+        align-items: center;
     }
 
     .nav a {
         text-align: center;
-        font-size: 0.9em;
+        font-size: 3.3vw;
     }
 
     .wrapper {

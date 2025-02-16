@@ -99,9 +99,9 @@ header .name{
 
 .content {
     height:82vh;
-    width: 80vw;
+    width: 100vw;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -111,7 +111,7 @@ header .name{
     justify-content: left;
     padding: 0 0 0 2%;
     color: #262523;
-    width: 100%;
+    width: 20vw;
 }
 
 .content .aboutmetitle {
@@ -126,8 +126,18 @@ header .name{
     height: 100%
 }
 
+.aboutmeinfo {
+    width: 40vw;
+    font-size: 1.5vw;
+    color: #fff7f0;
+}
+
+.aboutmeinfo p {
+    margin-top: 2vh;
+}
+
 .profile-pic {
-    width: 80%;
+    width: 25vw;
     background-color: #BF4342;
     object-fit: cover;
     border-radius: 50%;
@@ -147,13 +157,14 @@ header .name{
     .nav {
         padding-left: 1vw;
         flex-direction: row;
-        gap: 10px;
+        gap: 2vw;
         width: 100%;
+        align-items: center;
     }
 
     .nav a {
         text-align: center;
-        font-size: 0.9em;
+        font-size: 3.3vw;
     }
 
     .wrapper {
