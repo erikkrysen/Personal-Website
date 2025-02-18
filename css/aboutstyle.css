@@ -168,31 +168,31 @@ header .name{
     }
 
     .wrapper {
-        padding-top: 20vh
+        padding-top: 20vh;
+        justify-content: left;
     }
 
     .content {
         flex-direction: column;
         height: 80vh;
+        justify-content: left;
+        width: 100vw;
+    }
+
+    .content .textArea {
+        justify-content: left;
+        width: 100vw;
     }
 
     .content .aboutmetitle {
         font-size: calc(15vh + 30vw);
         line-height: 0.71;
+        align-items: left;
     }
 
-    .undercontent {
-        height: 25vh;
-        width: 30vw;
-        display: flex;
-        justify-content: left;
-        position: absolute;
-        margin-left: 30vw;
-        margin-top: 9vh;
-    }
-
-    .undercontent h2 {
+    .aboutmeinfo{
         font-size: calc(1vw + 1vh);
+        width: 80vw;
     }
     
     .profile-pic {
@@ -200,5 +200,6 @@ header .name{
         background-color: #BF4342;
         object-fit: cover;
         border-radius: 50%;
+        margin-top: 3vh;
     }
 }
