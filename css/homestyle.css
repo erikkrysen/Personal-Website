@@ -258,11 +258,10 @@ img {
     object-fit: cover;
 }
 
-#home {
-    width: 25%;
-    padding:10px;
-    background-color: #BF4342;
-    object-fit: cover;
+.blurred {
+    transition: filter 0.3s ease;
+    filter: blur(5px);
+    text-shadow: 1px 1px 4px #FF000080, -1px -1px 4px #0000FF80
 }
 
 @media (max-width: 768px){
